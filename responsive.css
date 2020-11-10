@@ -1,0 +1,54 @@
+/* タブレット */
+@media (max-width:1000px) {
+
+}
+
+/* スマホ */
+@media (max-width:670px) {
+  .header-bg i{
+    display: block;
+  }
+
+  .header-right{
+    display: none;
+  }
+
+  .signup-show {
+    width: 80%;
+  }
+
+  .paragraph a {
+    font-size: 10px;
+  }
+
+  .table{
+    width: 100%;
+
+  }
+
+  .introduction {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+/* image lotation */
+.change-btn-wrapper {
+  width: 300px;
+}
+
+  .slide img {
+    width: 300px;
+  }
+
+/* フォーム入力 */
+  .section-title>h3 {
+    font-size: 25px;
+  }
+
+  .fab {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+
+}
