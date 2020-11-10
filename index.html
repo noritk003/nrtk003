@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/3727225dc1.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-bg">
+        <nav id="menu">
+          <i id="close_menu" class="fas fa-times"></i>
+          <ul>
+            <li><a href="#">Sample1</a></li>
+            <li><a href="#">Sample2</a></li>
+            <li><a href="#">Sample3</a></li>
+          </ul>
+        </nav>
+        <div class="header-left">
+          <p id="top-btn">Potfolio</p>
+        </div>
+        <i  id="open_menu" class="fas fa-bars"></i>
+        <div class="header-right">
+          <ul>
+            <li>Sample1</li>
+            <li>Sample2</li>
+            <li>Sample3</li>
+            <li class="login" id="login-show">ログイン</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="signup-modal-wrapper" id="signup-modal">
+    <div class="modal">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+
+      <div id="signup-form">
+        <h2>Emailで新規登録</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="メールアドレス">
+          <input class="form-control" type="password" placeholder="パスワード">
+          <div id="submit-btn">新規登録</div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="login-modal-wrapper" id="login-modal">
+    <div class="modal">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+
+      <div id="login-form">
+        <h2>Emailログイン</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="メールアドレス">
+          <input class="form-control" type="password" placeholder="パスワード">
+          <div id="submit-btn">ログイン</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="home" id="home">
+        <div class="home-top">
+          <p class="title">TITLE</p>
+          <p class="sub">sub-title</p>
+        </div>
+        <div class="paragraph">
+          <ul>
+            <li>
+              <a class="no-color-change" href="#home">HOME</a>
+            </li>
+            <li>
+              <a class="no-color-change" href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a class="no-color-change" href="#image-litation">Image Lotation</a>
+            </li>
+            <li>
+              <a class="no-color-change" href="#chara">Character</a>
+            </li>
+          </ul>
+        </div>
+        <div class="signup-wrapper">
+          <div class="btn signup signup-show">新規登録はこちら</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-all">
+    <div class="container">
+      <div class="about" id="about">
+        <p>ABOUT ME</p>
+        <div class="table">
+          <table>
+            <tr>
+              <th>名前</th>
+              <td>坂本矩崇</td>
+            </tr>
+            <tr>
+              <th>年齢</th>
+              <td>21歳</td>
+            </tr>
+            <tr>
+              <th>職業</th>
+              <td>学生</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="introduction">
+          <p>
+            私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。私について紹介します。
+          </p>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="slide-wrapper" id="image-litation">
+      <h2 class="slide-title">Image Lotation</h2>
+        <div class="change-btn-wrapper">
+          <div class="change-btn prev-btn">← 前へ</div>
+          <div class="change-btn next-btn">次へ →</div>
+        </div>
+        <ul class="slides">
+          <li class="slide active"><img src="sogen.jpg"></li>
+          <li class="slide"><img src="tonbo.jpg"></li>
+          <li class="slide"><img src="inko.jpg"></li>
+          <li class="slide"><img src="umi.jpg"></li>
+          <li class="slide"><img src="hukuro.jpg"></li>
+        </ul>
+        <div class="index-btn-wrapper">
+          <div class="index-btn">1</div>
+          <div class="index-btn">2</div>
+          <div class="index-btn">3</div>
+          <div class="index-btn">4</div>
+          <div class="index-btn">5</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- フォーム入力 -->
+  <section>
+    <div class="form-all" id="chara">
+      <div class="container">
+        <div class="section-title">
+          <h3>フォーム入力</h3>
+        </div>
+        <div class="section-content">
+          <form id="form" class="form">
+            <div class="form-group">
+              <div>動物：</div>
+              <select id="select-form" class="select-form">
+                <option value="0">選択してください</option>
+                <option value="1">1. 犬</option>
+                <option value="2">2. 猫</option>
+                <option value="3">3. うさぎ</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p id="error-message" class="error-message"></p>
+              <div>理由：</div>
+              <textarea id="text-form" class="text-form"></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit">送信</button>
+          </form>
+          <div class="output-wrapper">
+            <h4>結果</h4>
+            <div class="output-inner">
+              <p class="output-item">好きな動物：<span id="output-select"></span></p>
+              <p class="output-item">特徴：<span id="output-text"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-all">
+        <div class="footer-title">-- Follow Me --</div>
+        <div class="sns">
+          <i class="fab fa-facebook-square facebook"> Facebook</i>
+          <i class="fab fa-twitter-square twitter"> Twitter</i>
+          <i class="fab fa-instagram-square instagram"> Instagram</i>
+          <i class="fab fa-youtube youtube"> Youtube</i>
+        </div>
+        <div class="copyright">Copyright Portfolio all rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+
+      openMenu.addEventListener('click', function() {
+        menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+    })();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
